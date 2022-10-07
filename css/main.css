@@ -26,7 +26,7 @@
 
 body {
   background-color: #000;
-  color: rgb(149, 129, 70);
+  color: rgb(45, 82, 244);
   font-size: calc(var(--index) * 1);
   font-family: raleway_c, sans-serif;
   line-height: 1.75;
@@ -64,6 +64,7 @@ h3,
 h4 {
   font-weight: 100;
   text-transform: uppercase;
+  width: min-content;
 }
 
 .frame h2 {
@@ -80,7 +81,7 @@ h4 {
 }
 
 .frame__media_left {
-  right: calc(var(--side-small) / 2 * var(--index) + var(--gutter));
+  right: calc(var(--side-small) / 3 * var(--index) + var(--gutter));
 }
 
 .frame__media_right {
@@ -89,4 +90,9 @@ h4 {
 
 .frame_bg {
   background-color: rgb(0 0 0 / 0.8);
+}
+
+video.frame__media {
+  width: calc(var(--index) * var(--side-big));
+  height: calc(var(--index) * var(--side-small));
 }
