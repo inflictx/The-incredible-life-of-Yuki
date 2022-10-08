@@ -38,8 +38,4 @@ window.onfocus = function () {
   soundButton.classList.contains("paused") ? audio.pause() : audio.play();
 };
 
-window.onblur = function () {
-  audio.pause();
-};
-
 console.log("hello");
